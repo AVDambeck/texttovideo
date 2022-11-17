@@ -8,6 +8,9 @@ import doc as script
 #import os to run ffmpeg scripts at end.
 import os
 
+#import textwrap to make wordwrap happen 
+import textwrap
+
 #import wand moduals
 from wand.image import Image
 from wand.drawing import Drawing
@@ -25,6 +28,8 @@ print("Starting...")
 
 #for each line in the script
 for i in script.ls:
+    #do word wrapping    
+    i = textwrap.fill(i, width=50)
     #prevent empty string, making white space instead
     if i == "":
         i = " "
