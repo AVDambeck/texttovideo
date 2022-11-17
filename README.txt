@@ -1,0 +1,1 @@
+Made this in about 2 hours for an art project. Practically: it makes a speedreader esk video where one line of text is displayed as a time. Technically: It takes an list  of strings (doc.py) and renders and image for each one, then makes video. Hymn to Pan by Aleister Crowley as an example.
