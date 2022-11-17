@@ -25,6 +25,9 @@ print("Starting...")
 
 #for each line in the script
 for i in script.ls:
+    #prevent empty string, making white space instead
+    if i == "":
+        i = " "
     #magic code I copied from a tutorial
     with Drawing() as draw:
         with Image(width = 1920, height = 1080, background = Color('black')) as image:
